@@ -5,7 +5,7 @@ deploy:
   provider: s3
   bucket: tests3deploy
   region: eu-north-1
-  local_dir: dist
+  local_dir: ./dist
   verbose: true
   edge: true # opt in to dpl v2
   on:
