@@ -2,10 +2,7 @@
   "name": "s3deploy",
   "version": "0.0.1",
   "private": true,
-  "scripts": {
-  },
-  "dependencies": {
-  },
-  "devDependencies": {
-  }
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
 }
