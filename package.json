@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "test": "echo 'test'",
-    "build": "echo 'build'"
-
+    "build": "node index.js"
   },
   "dependencies": {},
   "devDependencies": {}
