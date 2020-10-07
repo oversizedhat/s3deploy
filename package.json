@@ -3,8 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "clean" : "rm -rf dist",
     "test": "echo 'test'",
-    "build": "node index.js"
+    "build":"node index.js",
+    "build:clean": "npm run clean && npm run build"
   },
   "dependencies": {},
   "devDependencies": {}
