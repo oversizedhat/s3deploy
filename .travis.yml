@@ -1,12 +1,19 @@
 language: node_js
 node_js:
   - 14
-deploy:
-  provider: s3
-  bucket: tests3deploy
-  region: eu-north-1
-  local_dir: ./dist
-  verbose: true
-  edge: true # opt in to dpl v2
-  on:
-    branch: ["testing"]
+
+jobs:
+  include:
+    - stage: "build"
+      script: npm run build
+    - stage: "deploy"
+      script: echo "Deploying to s3 bucket"
+      deploy:
+        provider: s3
+        bucket: tests3deploy
+        region: eu-north-1
+        local_dir: ./dist
+        verbose: true
+        edge: true # opt in to dpl v2
+        on:
+          branch: ["testing"]
