@@ -1,4 +1,4 @@
-## Boilerplate for npm project with s3 deploy
+## Boilerplate for npm project with s3 deploy using Travis CI
 
 ### Setup
 1. Connect github repo with Travis
