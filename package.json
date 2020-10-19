@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "clean": "rm -rf dist",
-    "lint:travis": "docker run -v $(pwd):/project --rm traviscli lint .travis.yml",
+    "lint:travis": "docker run -v $(pwd):/project --rm traviscli lint -x",
     "pre-commit": "npm run lint:travis && npm run test",
     "test": "echo 'test'",
     "build": "node index.js",
