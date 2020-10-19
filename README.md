@@ -1,5 +1,7 @@
 ## Boilerplate for npm project with s3 deploy using Travis CI
 
+[![Build Status](https://travis-ci.org/oversizedhat/s3deploy-travisci.svg?branch=master)](https://travis-ci.org/oversizedhat/s3deploy-travisci)
+
 ### Setup
 1. Connect github repo with Travis
 2. Create neccessary env vars in Travis project allowing deploys to AWS S3
