@@ -10,6 +10,11 @@
     "build": "node index.js",
     "build:clean": "npm run clean && npm run build"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run pre-commit"
+    }
+  },
   "dependencies": {},
   "devDependencies": {
     "husky": "~4.3.0"
